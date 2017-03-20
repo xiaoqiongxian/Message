@@ -2,7 +2,7 @@ var MessageTest = (function($,undefined){
 	//变量缓存
 	var $showInfo = $("#showInfo");
 	var $showError = $("#showError");
-	var $showOk = $("#showOk");
+	var $showWarning = $("#showWarning");
 	var $alertInfo = $("#alertInfo");
 	var $confirmQuestion = $("#confirmQuestion");
 	var $showAllOptions = $("#showAllOptions");
@@ -17,8 +17,8 @@ var MessageTest = (function($,undefined){
 		Message.show({Msg: "这是一个showError", iconImg: 'error'});
 	};
 
-	var _showOk = function(){
-		Message.show({Msg: "这是一个showOk", iconImg: 'ok',isHideDate: 6000});
+	var _showWarning = function(){
+		Message.show({Msg: "这是一个showOk", iconImg: 'warning',isHideDate: 6000});
 	};
 
 	var _alertInfo = function(){
@@ -61,7 +61,7 @@ var MessageTest = (function($,undefined){
     var  _bindMethod = function(){
     	$showInfo.bind("click",_showInfo);
     	$showError.bind("click",_showError);
-    	$showOk.bind("click",_showOk);
+    	$showWarning.bind("click",_showWarning);
     	$alertInfo.bind("click",_alertInfo);
     	$confirmQuestion.bind("click",_confirmQuestion);
     	$showAllOptions.bind("click",_showAllOptions);
