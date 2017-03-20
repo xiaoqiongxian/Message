@@ -18,7 +18,7 @@ var MessageTest = (function($,undefined){
 	};
 
 	var _showWarning = function(){
-		Message.show({Msg: "这是一个showOk", iconImg: 'warning',isHideDate: 6000});
+		Message.show({Msg: "这是一个showWarning", iconImg: 'warning',isHideDate: 6000});
 	};
 
 	var _alertInfo = function(){
